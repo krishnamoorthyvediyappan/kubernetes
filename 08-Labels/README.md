@@ -6,6 +6,7 @@
     kubectl get pods 
     kubectl describe pod helloworld-deployment-57986b947d-7p2nx
     kubectl get nodes
+    # (krish) label the below worker node with label hardware=virtual
     kubectl label nodes worker hardware=virtual
     kubectl get nodes --show-labels
     kubectl get pods 
@@ -21,6 +22,7 @@
     kubectl get pods -o wide 
      kubectl get nodes --show-labels
     
+    # remove the label named env , use command env-
      kubectl label nodes worker env-
      kubectl label nodes worker hardware-
      kubectl get nodes --show-labels
