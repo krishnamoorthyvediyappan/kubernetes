@@ -1,5 +1,6 @@
 ```    
 	kubectl get secrets 
+	#below /root/usrname.txt file is not available for me , learn how to create this ?, and proceed further 
       cat /root/username.txt 
       cat /root/password.txt 
       kubectl create secret generic mysecrets --from-file=/root/username.txt --from-file=/root/password.txt
