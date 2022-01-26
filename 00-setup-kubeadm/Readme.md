@@ -73,7 +73,7 @@ Hack required to provision K8s v1.15+ in LXC containers
 Update the below command with the ip address of master.If we are using AWS or GCP cloud then we need to use the private ipaddress of the 
 VM's used to create the master node 
 ```
-kubeadm init --apiserver-advertise-address=<Master node ipaddress> --pod-network-cidr=192.168.0.0/16  --ignore-preflight-errors=all
+kubeadm init --apiserver-advertise-address=<Master node **private **paddress> --pod-network-cidr=192.168.0.0/16  --ignore-preflight-errors=all
 ```
 #### Deploy Calico network
 ```
